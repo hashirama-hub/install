@@ -6,3 +6,5 @@ sudo apt update
 apt-cache policy docker-ce -y
 sudo apt install docker-ce -y
 sudo chmod 777 var/run/docker.sock
+
+sudo usermod -aG docker $USER && newgrp docker
