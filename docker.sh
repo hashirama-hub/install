@@ -5,6 +5,6 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt update
 apt-cache policy docker-ce -y
 sudo apt install docker-ce -y
-sudo chmod 777 var/run/docker.sock
+sudo chmod 777 /var/run/docker.sock
 
 sudo usermod -aG docker $USER && newgrp docker
